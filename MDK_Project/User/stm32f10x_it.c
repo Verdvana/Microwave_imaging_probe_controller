@@ -231,10 +231,11 @@ void SysTick_Handler(void)
 		
   if(EXTI_GetITStatus(EXTI_Line13) != RESET)   //向上
 	{ 
-
     flag_u=1;     //标志位置1 
 	EXTI_ClearITPendingBit(EXTI_Line13);  		
 	 }			
 		
  }
 	
+ 
+

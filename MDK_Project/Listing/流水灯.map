@@ -176,17 +176,17 @@ Image Symbol Table
     .text                                    0x08000540   Section        0  stm32f10x_gpio.o(.text)
     .text                                    0x0800089c   Section        0  stm32f10x_rcc.o(.text)
     .text                                    0x08000c40   Section        0  main.o(.text)
-    .text                                    0x08000e28   Section        0  stm32f10x_it.o(.text)
-    .text                                    0x08000eec   Section        0  bsp_led.o(.text)
-    .text                                    0x08000f54   Section        0  bsp_systick.o(.text)
-    .text                                    0x08001008   Section        0  bsp_stepper_motor.o(.text)
-    .text                                    0x080017c4   Section        0  bsp_segment_display.o(.text)
-    .text                                    0x08001bb4   Section        0  bsp_buzzer.o(.text)
-    .text                                    0x08001be8   Section        0  bsp_it.o(.text)
-    .text                                    0x08001e30   Section       36  init.o(.text)
-    i.__scatterload_copy                     0x08001e54   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08001e62   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08001e64   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .text                                    0x08000ea0   Section        0  stm32f10x_it.o(.text)
+    .text                                    0x08000f64   Section        0  bsp_led.o(.text)
+    .text                                    0x08000fcc   Section        0  bsp_systick.o(.text)
+    .text                                    0x08001080   Section        0  bsp_stepper_motor.o(.text)
+    .text                                    0x0800183c   Section        0  bsp_segment_display.o(.text)
+    .text                                    0x08001c2c   Section        0  bsp_buzzer.o(.text)
+    .text                                    0x08001c60   Section        0  bsp_it.o(.text)
+    .text                                    0x08001ea8   Section       36  init.o(.text)
+    i.__scatterload_copy                     0x08001ecc   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08001eda   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08001edc   Section       14  handlers.o(i.__scatterload_zeroinit)
     .data                                    0x20000000   Section       20  system_stm32f10x.o(.data)
     .data                                    0x20000014   Section       20  stm32f10x_rcc.o(.data)
     APBAHBPrescTable                         0x20000014   Data          16  stm32f10x_rcc.o(.data)
@@ -345,60 +345,60 @@ Image Symbol Table
     RCC_GetITStatus                          0x08000c03   Thumb Code    20  stm32f10x_rcc.o(.text)
     RCC_ClearITPendingBit                    0x08000c17   Thumb Code     6  stm32f10x_rcc.o(.text)
     Start                                    0x08000c41   Thumb Code   234  main.o(.text)
-    main                                     0x08000d2b   Thumb Code   200  main.o(.text)
-    NMI_Handler                              0x08000e29   Thumb Code     2  stm32f10x_it.o(.text)
-    HardFault_Handler                        0x08000e2b   Thumb Code     4  stm32f10x_it.o(.text)
-    MemManage_Handler                        0x08000e2f   Thumb Code     4  stm32f10x_it.o(.text)
-    BusFault_Handler                         0x08000e33   Thumb Code     4  stm32f10x_it.o(.text)
-    UsageFault_Handler                       0x08000e37   Thumb Code     4  stm32f10x_it.o(.text)
-    SVC_Handler                              0x08000e3b   Thumb Code     2  stm32f10x_it.o(.text)
-    DebugMon_Handler                         0x08000e3d   Thumb Code     2  stm32f10x_it.o(.text)
-    PendSV_Handler                           0x08000e3f   Thumb Code     2  stm32f10x_it.o(.text)
-    SysTick_Handler                          0x08000e41   Thumb Code     8  stm32f10x_it.o(.text)
-    EXTI9_5_IRQHandler                       0x08000e49   Thumb Code    48  stm32f10x_it.o(.text)
-    EXTI15_10_IRQHandler                     0x08000e79   Thumb Code    92  stm32f10x_it.o(.text)
-    LED_GPIO_Config                          0x08000eed   Thumb Code    90  bsp_led.o(.text)
-    SysTick_Init                             0x08000f55   Thumb Code   106  bsp_systick.o(.text)
-    Delay_us                                 0x08000fbf   Thumb Code    36  bsp_systick.o(.text)
-    TimingDelay_Decrement                    0x08000fe3   Thumb Code    18  bsp_systick.o(.text)
-    ENa_PP_Config                            0x08001009   Thumb Code    50  bsp_stepper_motor.o(.text)
-    ENa_OD_Config                            0x0800103b   Thumb Code    50  bsp_stepper_motor.o(.text)
-    DIRa_PP_Config                           0x0800106d   Thumb Code    50  bsp_stepper_motor.o(.text)
-    DIRa_OD_Config                           0x0800109f   Thumb Code    50  bsp_stepper_motor.o(.text)
-    PULa_PP_Config                           0x080010d1   Thumb Code    50  bsp_stepper_motor.o(.text)
-    PULa_OD_Config                           0x08001103   Thumb Code    50  bsp_stepper_motor.o(.text)
-    ENb_PP_Config                            0x08001135   Thumb Code    50  bsp_stepper_motor.o(.text)
-    ENb_OD_Config                            0x08001167   Thumb Code    50  bsp_stepper_motor.o(.text)
-    DIRb_PP_Config                           0x08001199   Thumb Code    50  bsp_stepper_motor.o(.text)
-    DIRb_OD_Config                           0x080011cb   Thumb Code    50  bsp_stepper_motor.o(.text)
-    PULb_PP_Config                           0x080011fd   Thumb Code    50  bsp_stepper_motor.o(.text)
-    PULb_OD_Config                           0x0800122f   Thumb Code    50  bsp_stepper_motor.o(.text)
-    ENc_PP_Config                            0x08001261   Thumb Code    46  bsp_stepper_motor.o(.text)
-    ENc_OD_Config                            0x0800128f   Thumb Code    46  bsp_stepper_motor.o(.text)
-    DIRc_PP_Config                           0x080012bd   Thumb Code    46  bsp_stepper_motor.o(.text)
-    DIRc_OD_Config                           0x080012eb   Thumb Code    46  bsp_stepper_motor.o(.text)
-    PULc_PP_Config                           0x08001319   Thumb Code    50  bsp_stepper_motor.o(.text)
-    PULc_OD_Config                           0x0800134b   Thumb Code    50  bsp_stepper_motor.o(.text)
-    Forward                                  0x0800137d   Thumb Code   232  bsp_stepper_motor.o(.text)
-    Backward                                 0x08001465   Thumb Code   212  bsp_stepper_motor.o(.text)
-    Backward_Step                            0x08001539   Thumb Code   202  bsp_stepper_motor.o(.text)
-    Right                                    0x08001603   Thumb Code   276  bsp_stepper_motor.o(.text)
-    Up                                       0x08001717   Thumb Code     2  bsp_stepper_motor.o(.text)
-    Down                                     0x08001719   Thumb Code   136  bsp_stepper_motor.o(.text)
-    Segment_GPIO_Config                      0x080017c5   Thumb Code   134  bsp_segment_display.o(.text)
-    Segment1                                 0x0800184b   Thumb Code   402  bsp_segment_display.o(.text)
-    Segment2                                 0x080019dd   Thumb Code   410  bsp_segment_display.o(.text)
-    Segment_Reset                            0x08001b77   Thumb Code    40  bsp_segment_display.o(.text)
-    Buzzer_GPIO_Config                       0x08001bb5   Thumb Code    46  bsp_buzzer.o(.text)
-    NVIC_Configuration                       0x08001be9   Thumb Code   192  bsp_it.o(.text)
-    EXTI_Config                              0x08001ca9   Thumb Code   384  bsp_it.o(.text)
-    __scatterload                            0x08001e31   Thumb Code    28  init.o(.text)
-    __scatterload_rt2                        0x08001e31   Thumb Code     0  init.o(.text)
-    __scatterload_copy                       0x08001e55   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08001e63   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08001e65   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    Region$$Table$$Base                      0x08001e74   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08001e94   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x08000d2b   Thumb Code   320  main.o(.text)
+    NMI_Handler                              0x08000ea1   Thumb Code     2  stm32f10x_it.o(.text)
+    HardFault_Handler                        0x08000ea3   Thumb Code     4  stm32f10x_it.o(.text)
+    MemManage_Handler                        0x08000ea7   Thumb Code     4  stm32f10x_it.o(.text)
+    BusFault_Handler                         0x08000eab   Thumb Code     4  stm32f10x_it.o(.text)
+    UsageFault_Handler                       0x08000eaf   Thumb Code     4  stm32f10x_it.o(.text)
+    SVC_Handler                              0x08000eb3   Thumb Code     2  stm32f10x_it.o(.text)
+    DebugMon_Handler                         0x08000eb5   Thumb Code     2  stm32f10x_it.o(.text)
+    PendSV_Handler                           0x08000eb7   Thumb Code     2  stm32f10x_it.o(.text)
+    SysTick_Handler                          0x08000eb9   Thumb Code     8  stm32f10x_it.o(.text)
+    EXTI9_5_IRQHandler                       0x08000ec1   Thumb Code    48  stm32f10x_it.o(.text)
+    EXTI15_10_IRQHandler                     0x08000ef1   Thumb Code    92  stm32f10x_it.o(.text)
+    LED_GPIO_Config                          0x08000f65   Thumb Code    90  bsp_led.o(.text)
+    SysTick_Init                             0x08000fcd   Thumb Code   106  bsp_systick.o(.text)
+    Delay_us                                 0x08001037   Thumb Code    36  bsp_systick.o(.text)
+    TimingDelay_Decrement                    0x0800105b   Thumb Code    18  bsp_systick.o(.text)
+    ENa_PP_Config                            0x08001081   Thumb Code    50  bsp_stepper_motor.o(.text)
+    ENa_OD_Config                            0x080010b3   Thumb Code    50  bsp_stepper_motor.o(.text)
+    DIRa_PP_Config                           0x080010e5   Thumb Code    50  bsp_stepper_motor.o(.text)
+    DIRa_OD_Config                           0x08001117   Thumb Code    50  bsp_stepper_motor.o(.text)
+    PULa_PP_Config                           0x08001149   Thumb Code    50  bsp_stepper_motor.o(.text)
+    PULa_OD_Config                           0x0800117b   Thumb Code    50  bsp_stepper_motor.o(.text)
+    ENb_PP_Config                            0x080011ad   Thumb Code    50  bsp_stepper_motor.o(.text)
+    ENb_OD_Config                            0x080011df   Thumb Code    50  bsp_stepper_motor.o(.text)
+    DIRb_PP_Config                           0x08001211   Thumb Code    50  bsp_stepper_motor.o(.text)
+    DIRb_OD_Config                           0x08001243   Thumb Code    50  bsp_stepper_motor.o(.text)
+    PULb_PP_Config                           0x08001275   Thumb Code    50  bsp_stepper_motor.o(.text)
+    PULb_OD_Config                           0x080012a7   Thumb Code    50  bsp_stepper_motor.o(.text)
+    ENc_PP_Config                            0x080012d9   Thumb Code    46  bsp_stepper_motor.o(.text)
+    ENc_OD_Config                            0x08001307   Thumb Code    46  bsp_stepper_motor.o(.text)
+    DIRc_PP_Config                           0x08001335   Thumb Code    46  bsp_stepper_motor.o(.text)
+    DIRc_OD_Config                           0x08001363   Thumb Code    46  bsp_stepper_motor.o(.text)
+    PULc_PP_Config                           0x08001391   Thumb Code    50  bsp_stepper_motor.o(.text)
+    PULc_OD_Config                           0x080013c3   Thumb Code    50  bsp_stepper_motor.o(.text)
+    Forward                                  0x080013f5   Thumb Code   232  bsp_stepper_motor.o(.text)
+    Backward                                 0x080014dd   Thumb Code   212  bsp_stepper_motor.o(.text)
+    Backward_Step                            0x080015b1   Thumb Code   202  bsp_stepper_motor.o(.text)
+    Right                                    0x0800167b   Thumb Code   276  bsp_stepper_motor.o(.text)
+    Up                                       0x0800178f   Thumb Code     2  bsp_stepper_motor.o(.text)
+    Down                                     0x08001791   Thumb Code   136  bsp_stepper_motor.o(.text)
+    Segment_GPIO_Config                      0x0800183d   Thumb Code   134  bsp_segment_display.o(.text)
+    Segment1                                 0x080018c3   Thumb Code   402  bsp_segment_display.o(.text)
+    Segment2                                 0x08001a55   Thumb Code   410  bsp_segment_display.o(.text)
+    Segment_Reset                            0x08001bef   Thumb Code    40  bsp_segment_display.o(.text)
+    Buzzer_GPIO_Config                       0x08001c2d   Thumb Code    46  bsp_buzzer.o(.text)
+    NVIC_Configuration                       0x08001c61   Thumb Code   192  bsp_it.o(.text)
+    EXTI_Config                              0x08001d21   Thumb Code   384  bsp_it.o(.text)
+    __scatterload                            0x08001ea9   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x08001ea9   Thumb Code     0  init.o(.text)
+    __scatterload_copy                       0x08001ecd   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08001edb   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08001edd   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x08001eec   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001f0c   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f10x.o(.data)
     AHBPrescTable                            0x20000004   Data          16  system_stm32f10x.o(.data)
     flag_r                                   0x20000028   Data           1  main.o(.data)
@@ -421,9 +421,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001ed0, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001f48, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001e94, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00001f0c, Max: 0x00080000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -443,33 +443,33 @@ Memory Map of the image
     0x08000424   0x08000424   0x0000011c   Code   RO          200    .text               stm32f10x_exti.o
     0x08000540   0x08000540   0x0000035c   Code   RO          242    .text               stm32f10x_gpio.o
     0x0800089c   0x0800089c   0x000003a4   Code   RO          299    .text               stm32f10x_rcc.o
-    0x08000c40   0x08000c40   0x000001e8   Code   RO          403    .text               main.o
-    0x08000e28   0x08000e28   0x000000c4   Code   RO          441    .text               stm32f10x_it.o
-    0x08000eec   0x08000eec   0x00000068   Code   RO          460    .text               bsp_led.o
-    0x08000f54   0x08000f54   0x000000b4   Code   RO          472    .text               bsp_systick.o
-    0x08001008   0x08001008   0x000007bc   Code   RO          490    .text               bsp_stepper_motor.o
-    0x080017c4   0x080017c4   0x000003f0   Code   RO          505    .text               bsp_segment_display.o
-    0x08001bb4   0x08001bb4   0x00000034   Code   RO          517    .text               bsp_buzzer.o
-    0x08001be8   0x08001be8   0x00000248   Code   RO          529    .text               bsp_it.o
-    0x08001e30   0x08001e30   0x00000024   Code   RO          558    .text               mc_w.l(init.o)
-    0x08001e54   0x08001e54   0x0000000e   Code   RO          562    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08001e62   0x08001e62   0x00000002   Code   RO          563    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08001e64   0x08001e64   0x0000000e   Code   RO          564    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08001e72   0x08001e72   0x00000002   PAD
-    0x08001e74   0x08001e74   0x00000020   Data   RO          560    Region$$Table       anon$$obj.o
+    0x08000c40   0x08000c40   0x00000260   Code   RO          403    .text               main.o
+    0x08000ea0   0x08000ea0   0x000000c4   Code   RO          441    .text               stm32f10x_it.o
+    0x08000f64   0x08000f64   0x00000068   Code   RO          460    .text               bsp_led.o
+    0x08000fcc   0x08000fcc   0x000000b4   Code   RO          472    .text               bsp_systick.o
+    0x08001080   0x08001080   0x000007bc   Code   RO          490    .text               bsp_stepper_motor.o
+    0x0800183c   0x0800183c   0x000003f0   Code   RO          505    .text               bsp_segment_display.o
+    0x08001c2c   0x08001c2c   0x00000034   Code   RO          517    .text               bsp_buzzer.o
+    0x08001c60   0x08001c60   0x00000248   Code   RO          529    .text               bsp_it.o
+    0x08001ea8   0x08001ea8   0x00000024   Code   RO          558    .text               mc_w.l(init.o)
+    0x08001ecc   0x08001ecc   0x0000000e   Code   RO          562    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08001eda   0x08001eda   0x00000002   Code   RO          563    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08001edc   0x08001edc   0x0000000e   Code   RO          564    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08001eea   0x08001eea   0x00000002   PAD
+    0x08001eec   0x08001eec   0x00000020   Data   RO          560    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08001e94, Size: 0x00000440, Max: 0x00010000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08001f0c, Size: 0x00000440, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08001e94   0x00000014   Data   RW           25    .data               system_stm32f10x.o
-    0x20000014   0x08001ea8   0x00000014   Data   RW          300    .data               stm32f10x_rcc.o
-    0x20000028   0x08001ebc   0x00000006   Data   RW          404    .data               main.o
-    0x2000002e   0x08001ec2   0x00000002   PAD
-    0x20000030   0x08001ec4   0x00000004   Data   RW          473    .data               bsp_systick.o
-    0x20000034   0x08001ec8   0x00000006   Data   RW          491    .data               bsp_stepper_motor.o
-    0x2000003a   0x08001ece   0x00000006   PAD
+    0x20000000   0x08001f0c   0x00000014   Data   RW           25    .data               system_stm32f10x.o
+    0x20000014   0x08001f20   0x00000014   Data   RW          300    .data               stm32f10x_rcc.o
+    0x20000028   0x08001f34   0x00000006   Data   RW          404    .data               main.o
+    0x2000002e   0x08001f3a   0x00000002   PAD
+    0x20000030   0x08001f3c   0x00000004   Data   RW          473    .data               bsp_systick.o
+    0x20000034   0x08001f40   0x00000006   Data   RW          491    .data               bsp_stepper_motor.o
+    0x2000003a   0x08001f46   0x00000006   PAD
     0x20000040        -       0x00000400   Zero   RW            1    STACK               startup_stm32f10x_hd.o
 
 
@@ -487,7 +487,7 @@ Image component sizes
       1980         64          0          6          0       5267   bsp_stepper_motor.o
        180         20          0          4          0      16709   bsp_systick.o
          0          0          0          0          0       4508   core_cm3.o
-       488         54          0          6          0      16561   main.o
+       608         54          0          6          0      16613   main.o
        220         22          0          0          0       1825   misc.o
         36          8        304          0       1024        860   startup_stm32f10x_hd.o
        284         10          0          0          0       2283   stm32f10x_exti.o
@@ -497,7 +497,7 @@ Image component sizes
        480         38          0         20          0     226067   system_stm32f10x.o
 
     ----------------------------------------------------------------------
-      7404        384        336         60       1028     294045   Object Totals
+      7524        384        336         60       1028     294097   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          0          4          4          0   (incl. Padding)
 
@@ -536,15 +536,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      7492        400        336         60       1028     293277   Grand Totals
-      7492        400        336         60       1028     293277   ELF Image Totals
-      7492        400        336         60          0          0   ROM Totals
+      7612        400        336         60       1028     293329   Grand Totals
+      7612        400        336         60       1028     293329   ELF Image Totals
+      7612        400        336         60          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 7828 (   7.64kB)
+    Total RO  Size (Code + RO Data)                 7948 (   7.76kB)
     Total RW  Size (RW Data + ZI Data)              1088 (   1.06kB)
-    Total ROM Size (Code + RO Data + RW Data)       7888 (   7.70kB)
+    Total ROM Size (Code + RO Data + RW Data)       8008 (   7.82kB)
 
 ==============================================================================
 

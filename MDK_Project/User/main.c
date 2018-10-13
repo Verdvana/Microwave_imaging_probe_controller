@@ -71,42 +71,66 @@ int main(void)
 	{
 		if(flag_r)                         //向右按键按下
 		{
-			Right();                         //向右动作
-			Delay_ms(2000);                  //延时2s
-			Forward();                       //向前动作
-			Buzzer(1);                       //蜂鸣器响
-			Delay_ms(100);                   //延时100ms
-			Buzzer(0);                       //蜂鸣器关
+			Delay_ms(20);
+			if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_9))
+			{
+				Right();                         //向右动作
+				Delay_ms(2000);                  //延时2s
+				Forward();                       //向前动作
+				Buzzer(1);                       //蜂鸣器响
+				Delay_ms(100);                   //延时100ms
+				Buzzer(0);                       //蜂鸣器关
+			}
 		  flag_r=0;                        //恢复标志位
 		}
 		
 		else if(flag_b)                    //向后按键按下
 		{
-			Backward();                      //向后动作
+			Delay_ms(20);
+			if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_8))
+			{
+				Backward();                      //向后动作
+			}
 			flag_b=0;                        //恢复标志位
 		}
 		
 		else if(flag_bs)                   //向后步进按键按下
 		{
+			Delay_ms(20);
+			if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_11))
+			{
 			Backward_Step();                 //向后步进动作
+			}
 			flag_bs=0;                       //恢复标志位
 		}
 		
 		else if(flag_f)                    //向前按键按下
 		{
+			Delay_ms(20);
+			if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_12))
+			{
 			Forward();                       //向前动作
+			}
 			flag_f=0;                        //恢复标志位
 		}
 		
 		else if(flag_u)                    //向上按键按下
 		{ 
+			Delay_ms(20);
+			if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_13))
+			{
 			Up();                            //向上动作
+			}
 			flag_u=0;                        //恢复标志位
 		}
 		
 		else if(flag_d)                    //向下按键按下
 		{
+			Delay_ms(20);
+			if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_10))
+			{
 			Down();                          //向下动作
+			}
 			flag_d=0;                        //恢复标志位
 		}
 		
