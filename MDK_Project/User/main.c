@@ -72,7 +72,7 @@ int main(void)
 		if(flag_r)                         //向右按键按下
 		{
 			Delay_ms(20);
-			if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_9))
+			if(!GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_9))
 			{
 				Right();                         //向右动作
 				Delay_ms(2000);                  //延时2s
@@ -87,7 +87,7 @@ int main(void)
 		else if(flag_b)                    //向后按键按下
 		{
 			Delay_ms(20);
-			if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_8))
+			if(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_8))
 			{
 				Backward();                      //向后动作
 			}
@@ -97,7 +97,7 @@ int main(void)
 		else if(flag_bs)                   //向后步进按键按下
 		{
 			Delay_ms(20);
-			if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_11))
+			if(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_11))
 			{
 			Backward_Step();                 //向后步进动作
 			}
@@ -107,7 +107,7 @@ int main(void)
 		else if(flag_f)                    //向前按键按下
 		{
 			Delay_ms(20);
-			if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_12))
+			if(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_12))
 			{
 			Forward();                       //向前动作
 			}
@@ -117,7 +117,7 @@ int main(void)
 		else if(flag_u)                    //向上按键按下
 		{ 
 			Delay_ms(20);
-			if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_13))
+			if(!GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_13))
 			{
 			Up();                            //向上动作
 			}
@@ -127,7 +127,7 @@ int main(void)
 		else if(flag_d)                    //向下按键按下
 		{
 			Delay_ms(20);
-			if(GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_10))
+			if(!GPIO_ReadInputDataBit(GPIOC,GPIO_Pin_10))
 			{
 			Down();                          //向下动作
 			}
